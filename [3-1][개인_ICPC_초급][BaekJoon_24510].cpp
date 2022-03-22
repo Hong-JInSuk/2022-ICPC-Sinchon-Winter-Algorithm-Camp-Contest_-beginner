@@ -16,7 +16,7 @@ int main() {
 
 	for (int i = 0; i < c; i++) {
 		cin >> str;
-		vstr.push_back(str);
+		vstr.push_back(str); // 문장입력
 	}
 
 	for (int i = 0; i < c; i++) {
@@ -31,11 +31,12 @@ int main() {
 				n = vstr[i].find("while", n) + 5;
 			}
 		}*/
+		//아래말고 위처럼하면 시간초과
 		int n = 0;
 		while (vstr[i].find("for",n) < 10000) {
 			if (vstr[i].find("for", n) < 10000) {
 				cnt++;
-				n = vstr[i].find("for", n) + 3;
+				n = vstr[i].find("for", n) + 3; // 찾으면 cnt++ 하고, 다음위치부터 찾게함.
 			}
 		}
 		n = 0;
