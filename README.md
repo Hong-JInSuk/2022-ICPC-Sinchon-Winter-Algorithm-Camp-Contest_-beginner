@@ -1,1 +1,1 @@
-# 2022-ICPC-Sinchon-Winter-Algorithm-Camp-Contest--
+# 2022-ICPC-Sinchon-Winter-Algorithm-Camp-Contest-beginner
