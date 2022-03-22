@@ -10,26 +10,26 @@ int main() {
 	int temp = 0;
 	cin >> st;
 	
-	vector<vector<int>> v(st+1,vector<int>(4));
+	vector<vector<int>> v(st+1,vector<int>(4)); //0ë²ˆì§¸ ë°°ì—´ì€ ì•ˆì”€. ê·¸ë˜ì„œ st+1
 
 	for (int i = 0; i < st; i++) {
 		cin >> number;
 		for (int j = 0; j < 4; j++) {
 			cin >> score;
 			v[number][j] = score;
-		} //v[ÇĞ»ıÄÚµå][°ú¸ñ]
-	}//2Â÷¿ø¹è¿­ ÀÔ·Â³¡
-
+		} //v[í•™ìƒì½”ë“œ][ê³¼ëª©]
+	}
+	
 	for (int i = 0; i < 4; i++) {
-		int MAX = -1;
+		int MAX = -1; //ëª¨ë‘ 0ì´ë©´ ë²ˆí˜¸ìˆœì´ë¼ -1ì„ ì¨ì•¼ëœë‹¤.
 		for (int num = 1; num < st+1; num++) {
 			if (v[num][i] > MAX) { 
-				MAX = v[num][i];// ÃÖ´ñ°ª
-				temp = num; //ÇĞ»ıÄÚµå
+				MAX = v[num][i];// ìµœëŒ“ê°’
+				temp = num; //í•™ìƒì½”ë“œ
 			}
 		}
 		for (int j = 0; j < 4; j++) {
-			v[temp][j] = -1; //ÇÑ¹ø ¹Ş¾Æ¸ÔÀº³ğÀº Á¦¿Ü.
+			v[temp][j] = -1; //í•œë²ˆ ë°›ì•„ë¨¹ì€ë†ˆì€ ì œì™¸.
 		}
 		cout << temp << " ";
 	}
