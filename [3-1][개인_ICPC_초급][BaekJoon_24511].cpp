@@ -1,5 +1,4 @@
 #include<iostream>
-#include<vector>
 #include<deque>
 
 using namespace std;
@@ -9,7 +8,8 @@ int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
-
+        // 위 3줄은 cout과 cin의 속도를 높여주는 코드이다. 이 코드를 쓰지 않으면, cin을 scanf로 대체해야 시간초과가 발생하지 않는다.
+	
 	int n, a, b, c, d;
 	cin >> n;
 
